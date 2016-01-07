@@ -1,0 +1,4 @@
+<div ng-include src="'client/chat/views/testDetail.html'" ng-if="$root.currentUser"></div>
+<div class="pane padding app-bg-color" ng-if="!$root.currentUser">
+<button  id="auth0_login_button" class="button button-block button-positive" ng-click="loginUserWithAuth0()">Login</button>
+</div>
